@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Universal Mini Compiler</title>
+   <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@4.0.2/dist/tesseract.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <h1>Universal Mini Compiler</h1>
+<button id="toggleMode">Toggle Dark Mode</button>
+
+  <label for="languageSelect">Select Language:</label>
+  <select id="languageSelect">
+    <option value="python">Python</option>
+    <option value="cpp">C++</option>
+    <option value="c">C</option>
+    <option value="java">Java</option>
+    <option value="javascript">JavaScript</option>
+  </select>
+
+  <input type="file" id="imageInput" accept="image/*">
+  <textarea id="codeInput" placeholder="Write or paste your code here..." rows="10"></textarea>
+  <textarea id="stdinInput" placeholder="Enter input for the program here..." rows="5"></textarea>
+  <button id="compileBtn">Compile</button>
+  <button id="exportPdfBtn">Export Output as PDF</button>
+
+  <div class="output-container">
+    <h3>Output:</h3>
+    <pre id="outputArea" contenteditable="true"></pre>
+
+    <h3>Errors:</h3>
+    <pre id="errorArea"></pre>
+
+    <h3>Symbol Table:</h3>
+    <table id="symbolTable">
+      <thead><tr><th>Variable</th><th>Type</th></tr></thead>
+      <tbody></tbody>
+    </table>
+
+    <h3>Parse Tree:</h3>
+    <div id="parseTree" class="mermaid"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+ body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background:url(b1.jpg);
+      background-size:cover ;
+      color: grey;
+      padding: 2rem;
+    }
+  body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.dark-mode select,
+body.dark-mode textarea,
+body.dark-mode input[type="file"] {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  border: 1px solid #555;
+}
+
+body.dark-mode .output-container,
+body.dark-mode table {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+body.dark-mode pre,
+body.dark-mode #parseTree {
+  background-color: #333;
+  color: #f0f0f0;
+}
+
+    h1 {
+      text-align: center;
+      color: white;
+    }
+    select, textarea, input[type="file"] {
+      width: 100%;
+      margin: 1rem 0;
+      padding: 0.75rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    textarea {
+      font-family: monospace;
+    }
+    button {
+      padding: 0.75rem 1.5rem;
+      margin: 0.5rem 0.5rem 1rem 0;
+      font-size: 1rem;
+      background: #6a1b9a;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #4a148c;
+    }
+    .output-container {
+      background: #fff;
+      padding: 1rem;
+      border-radius: 5px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      margin-top: 1rem;
+    }
+    pre {
+      white-space: pre-wrap;
+      background: #f1f1f1;
+      padding: 1rem;
+      border-radius: 5px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 0.5rem;
+      text-align: left;
+    }
+    #parseTree {
+      background-color: #eef;
+      padding: 1rem;
+      border-radius: 5px;
+      margin-top: 1rem;
+    }
+       #toggleMode {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
